@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./bookmark-plus.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/bookmark-plus.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
    
     <title> Tu Terapia</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <nav class="navbar navbar-expand-md bg-body-secondary">
+            <div class="container-fluid">
+              <img src="./imagenes/logo.jpeg" width= "50px" alt="logotuterapia">
+              <h2>Tu Terapia</h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#nuestroEquipo">Nuestro Equipo</a>
+                  <a class="nav-link" href="#psicoterapias">Psicoterapias</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                  
+                </div>
+              </div>
+            </div>
+          
+        </nav>
+      </div>
+  </div>
     <header>
-               
-            <nav>
-
-            </nav>
-            <main class="hero">
+            <main class="row hero">
+              <div class="col-lg-8 offset-lg-2">
               <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,7 +53,7 @@
                   <div class="carousel-item">
                     <img src="./imagenes/WhatsApp Image 2023-04-15 at 12.50.54.jpg" class="d-block w-100" alt="flor silvestre">
                     <div class="carousel-caption d-none d-md-block">
-                      <p><b>Los cambios superadores surgen del rol protágonico del sujeto en su propia historia</b></p>
+                      <p><b>Los cambios superadores surgen del rol protagónico del sujeto en su propia historia</b></p>
                     </div>
                   </div>
                
@@ -43,34 +62,144 @@
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              </div>
             </main>
+  </header>
 
-    </header>
-</div>
-    <section>
+    <section id="nuestroEquipo">
+      <h2>Nuestro Equipo</h2>
+      <p>Somos un equipo de profesionales conformado por psicólogos y psicólogas con formación en diferentes especialidades, con experiencia en atención on-line y con un fuerte compromiso con la salud mental</p>
+       <div class="row">
+        <div class="col-md-6 d-flex justify-content-center mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./imagenes/pexels-christina-morillo-1181686.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>Cristina Morillo</h6>
+            <p class="card-text">Lic. en Psicología UBA. Terapia cognitivoconductual. Psicoterapeuta de niños y adolescentes</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-md-6 d-flex justify-content-center mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./imagenes/pexels-kampus-production-8353840.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>Eric Ibrahim</h6>
+            <p class="card-text">Lic. en Psicología UBA. Psicoanálisis, Terapia integral. Especialista en TOC</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-md-6 d-flex justify-content-center mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./imagenes/pexels-linkedin-sales-navigator-2182970.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>Carlos A. Molina</h6>
+            <p class="card-text">Lic. en Psicología UBA. Psicoanálisis, psicodrama. Facilitador de Técnicas de atención plenas en empresas</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-md-6 d-flex justify-content-center mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./imagenes/pexels-andrea-piacquadio-762020.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>María Agustina Cáceres</h6>
+            <p class="card-text">Psicóloga UBA. Mindfulness, Psicología humanista, Psicoterapia Integral.</p>
+          </div>
+        </div>
+       </div>
+       </div>
 
     </section>
-    <section>
+    <section id="psicoterapias">
+      <h2>Psicoterapias</h2>
+      <article>
+        <div class="d-flex justify-content-center mb-4">
+        <img src="./imagenes/pexels-cottonbro-studio-3662630.jpg"  alt="niño pintando" width="400px" >
+        <h4>Psicoterapia infantil</h4>
+        <p>Es un tipo de intervención terapéutica que tiene como finalidad principal potenciar el bienestar emocional y social del niño</p>
+      </div>
+      </article>
+      <article>
+        <div class="d-flex justify-content-center mb-4">
+        <img src="./imagenes/pexels-anamul-rezwan-1216589.jpg"  alt="obreros en fábrica" width="400px">
+        <h4>Psicología empresarial</h4>
+        <p>Este aspecto de la psicología se ocupa de la conducta individual y colectiva en el ámbito laboral, todos los factores que intervienen en el desarrollo de las tareas del trabajo. Su principal objetivo es definir adecuadamente todas las conductas que pueda haber en una empresa para mejorar el rendimiento de los trabajadores</p>
+      </div>
+      </article>
+      <article>
+        <div class="d-flex justify-content-center mb-4">
+        <img src="./imagenes/pexels-liza-summer-6382633.jpg" width="400px" alt="joven deprimida">
+        <h4>Psicoterapia congitivoconductual</h4>
+        <p>Cuando las personas padecen angustia, a menudo no pueden reconocer que sus pensamientos son incorrectos, por lo que la Terapia Cognitiva ayuda a identificar estos pensamientos, evaluarlos y conseguir formas más adecuadas de interpretar lo que se percibe, logrando con ello modificar las emociones y sentimientos negativos que generalmente afectan a la conducta</p>
+      </div>
+      </article>
 
     </section>
-    <section>
-
-    </section>
-    <section>
+    <section id="contacto" class="container my-3">
+      <h2>Contacto</h2>
         <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <fieldset>
+              <legend>Te brindamos servicio de consulta on-line desde cualquier sitio en el que te encuentres</legend>
+          <form class="formulario bg-body-secondary p-4">
+            <div class="mb-3">
+              <label class="form-label" for="fullName">Nombre completo</label>
+              <input type="text" id="fullName" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="edad">Edad</label>
+              <input type="number" class="form-control"> 
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Correo electrónico</label>
+              <input type="email" id="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="phone">Teléfono</label>
+              <input type="tel" id="phone" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label"  for="consulta">Seleccione tipo de Consulta</label>
+              <select class="form-select" id="consulta" aria-label="Default select example">
+                <option selected>Tipo de Consulta</option>
+                <option value="1">Presencial</option>
+                <option value="2">On-Line</option>
+                </select>
+            </div> 
+            <div class="mb-3">
+              <label class="form-label" for="fullNameTutor">Nombre completo del Tutor (menores de edad)</label>
+              <input type="text" id="fullNameTutor" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label class="form-label" for="motivoConsulta">Motivo de Consulta</label>
+            <textarea class="form-control" id="motivoConsulta" cols="30" rows="4" aria-describedby="secretoProf" placeholder="Cuéntamos sobre el motivo por el que deseas solicitar una consulta"></textarea>
+            <div id="secretoProf" class="form-text">Toda la información brindada en el presente formulario forma parte del secreto profesional</div>
+            </div>
+            
+          </fieldset>
+          <button type="submit" id="submitForm" class="btn btn-outline-secondary my-2">Enviar</button>
+          </form>
+          </div>
 
         </div>
 
     </section>
-    <footer>
+    <footer class="container">
+      <h5>Síguenos en las redes</h5>
+      <div class="d-flex justify-content-center">
         
+        <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div><p>sitio web desarrollado por <em>psicología batara y zapatos de goma</em></p></div>
     </footer>
-
+</div>
 <script src="https://kit.fontawesome.com/19985fa362.js" crossorigin="anonymous"></script>
  <script src="./app.js"></script> 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
